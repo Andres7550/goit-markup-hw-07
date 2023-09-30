@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Principal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+
+  <body>
+    <div class="background-modal is-hidden" data-modal>
+      <div class="modal-main">
+        <button class="button-close-modal" data-modal-close>
+          <svg width="18px" height="18px">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <div class="customer-data-container">
+          <div class="title-space">
+            <label class="tittle-modal">Deje sus datos, nos contactaremos con usted</label>
+          </div>
+          <label class="label-model" for="user_name">Nombre</label>
+          <div class="input-relative">
+            <svg class="icon-item" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-persona-negra-18dp-1"></use>
+            </svg>
+            <input class="group-input" type="text" name="TxtNombre" id="user_name" /><br />
+          </div>
+          <label class="label-model" for="user-telephone">Telefono</label>
+          <div class="input-relative">
+            <svg class="icon-item" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-telfono-negro-18dp-1"></use>
+            </svg>
+            <input class="group-input" type="text" name="TxtTelefono" id="user-telephone" /><br />
+          </div>
+          <label class="label-model" for="user_email">E-mail</label>
+          <div class="input-relative">
+            <svg class="icon-item" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-correo-electrnico-negro-18dp-1"></use>
+            </svg>
+            <input class="group-input" type="text" name="TxtEmail" id="user_email" />
+          </div>
+          <div class="com-space">
+            <label class="label-model" for="user-comments">Comentarios</label>
+          </div>
+          <div class="group-input-comments">
+            <textarea
+              class="text-area-model"
+              name="TxtComments"
+              id="user_comments"
+              cols="30"
+              rows="10"
+              placeholder="Introduzca texto"
+            ></textarea>
+          </div>
+          <div class="group-order">
+            <input class="check-model" type="checkbox" name="ChkTerms" id="terms_conditions" />
+            <label class="label-model-terms" for="terms_conditions"
+              >Estoy de acuerdo con el boletín informativo y acepto los <br />Términos y
+              Condiciones</label
+            >
+          </div>
+          <button class="button-model" type="submit">Enviar</button>
+        </div>
+      </div>
+    </div>
+
+    <header class="main-header">
+      <nav class="header-nav container">
+        <a href="./index.html" class="header-list-item-studio link-studio" target="_self"
+          >WebStudio</a
+        >
+        <ul>
+          <li class="position-list">
+            <a href="./index.html" class="header-list-item link-active" target="_self">Estudio</a>
+            <div class="header-line position-active"></div>
+          </li>
+          <li class="position-list">
+            <a href="./portafolio.html" class="header-list-item" target="_self">Portafolio</a>
+            <div class="header-line"></div>
+          </li>
+          <li class="position-list">
+            <a href="#" class="header-list-item" target="_self">Contactos</a>
+            <div class="header-line"></div>
+          </li>
+        </ul>
+        <div class="contact-header">
+          <a href="#" class="header-list-item contact-header-text" target="_self">
+            <svg width="16" height="12">
+              <use href="./images/icons.svg#icon-sobre"></use>
+            </svg>
+            qndresj@gmail.com</a
+          >
+          <a href="#" class="header-list-item contact-header-text" target="_self">
+            <svg width="10" height="16">
+              <use href="./images/icons.svg#icon-telfono-inteligente"></use>
+            </svg>
+            +57 3114885100</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-solutions">
+        <h1 class="tittle-main">SOLUCIONES EFICACES PARA<br />SU NEGOCIO</h1>
+        <div class="btn-center">
+          <button type="button" class="button-main" data-modal-open>
+            Solicite nuestros servicios
+          </button>
+        </div>
+      </section>
+
+      <section class="section-descr">
+        <ul class="container description-solution">
+          <li class="list-icon">
+            <div class="tarjet-icon">
+              <svg class="icons-detail">
+                <use href="./images/icons.svg#icon-antena-1"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="list-icon">
+            <div class="tarjet-icon">
+              <svg class="icons-detail">
+                <use href="./images/icons.svg#icon-reloj-1"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="list-icon">
+            <div class="tarjet-icon">
+              <svg class="icons-detail">
+                <use href="./images/icons.svg#icon-diagrama-1"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="list-icon">
+            <div class="tarjet-icon">
+              <svg class="icons-detail">
+                <use href="./images/icons.svg#icon-astronauta-1"></use>
+              </svg>
+            </div>
+          </li>
+        </ul>
+        <ul class="container description-solution">
+          <li class="list-desc">
+            <h3 class="tittle-desc">Atencion a los detalles</h3>
+            <p class="text-desc">
+              Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar
+              una solución a su medida.
+            </p>
+          </li>
+          <li class="list-desc">
+            <h3 class="tittle-desc">Puntualidad</h3>
+            <p class="text-desc">
+              Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la
+              empresa: respetar su tiempo y respetar los plazos acordados.
+            </p>
+          </li>
+          <li class="list-desc">
+            <h3 class="tittle-desc">Planificacion</h3>
+            <p class="text-desc">
+              Usted podrá observar y participar en cada fase del desarrollo y aplicación de
+              soluciones.
+            </p>
+          </li>
+          <li class="list-desc">
+            <h3 class="tittle-desc">Tecnologia moderna</h3>
+            <p class="text-desc">
+              Usamos herramientas innovadoras para resolver las tareas asignadas. Es hora de
+              simplificar los procesos laborales.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section-dedic">
+        <h2 class="tittle-dedic">A que nos dedicamos</h2>
+        <ul class="container images-dedic">
+          <li class="list-dedic">
+            <img src="images/programar.jpg" alt="programar" />
+            <p class="text-dedic">Aplicaciones de Escritorio</p>
+          </li>
+          <li class="list-dedic">
+            <img src="images/disenar.jpg" alt="diseno" />
+            <p class="text-dedic">Aplicaciones Móviles</p>
+          </li>
+          <li class="list-dedic">
+            <img src="images/test.jpg" alt="pruebas" />
+            <p class="text-dedic">SOLUCIONES DE DISEÑO</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section-equip">
+        <h2 class="tittle-equip">Nuestro equipo</h2>
+        <ul class="container images-equip">
+          <li class="equip-card">
+            <img src="images/disenador.jpg" class="images-equip-tam" alt="diseñador" />
+            <h3 class="member-name">Andres Cubo</h3>
+            <p class="member-profession">Diseñador de productos</p>
+            <ul class="container-icons icons-equip">
+              <li>
+                <a href="#" class="icon-tam">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-tam">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-tam">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-tam">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="equip-card">
+            <img src="images/desarrollador.jpg" class="images-equip-tam" alt="programador" />
+            <h3 class="member-name">Carla Palacios</h3>
+            <p class="member-profession">Desarrolladora Frontend</p>
+            <ul class="container-icons icons-equip">
+              <li>
+                <a href="#" class="icon-tam">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-tam">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-tam">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-tam">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="equip-card">
+            <img src="images/mark.jpg" class="images-equip-tam" alt="marketing" />
+            <h3 class="member-name">Mario Dorado</h3>
+            <p class="member-profession">Marketing</p>
+            <ul class="container-icons icons-equip">
+              <li>
+                <a href="#" class="icon-tam">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-tam">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-tam">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-tam">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="equip-card">
+            <img src="images/disenad.jpg" class="images-equip-tam" alt="diseñador2" />
+            <h3 class="member-name">Pablo Mijangos</h3>
+            <p class="member-profession">Diseñador IU</p>
+            <ul class="container-icons icons-equip">
+              <li>
+                <a href="#" class="icon-tam">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-tam">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-tam">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-tam">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="regular-clients">
+        <h2 class="tittle-regular">Clientes Regulares</h2>
+        <ul class="container images-regular-client">
+          <li class="equip-regular">
+            <svg width="106" height="53">
+              <use href="./images/icons.svg#icon-emp1"></use>
+            </svg>
+          </li>
+          <li class="equip-regular">
+            <svg width="106" height="53">
+              <use href="./images/icons.svg#icon-emp2"></use>
+            </svg>
+          </li>
+          <li class="equip-regular">
+            <svg width="106" height="53">
+              <use href="./images/icons.svg#icon-emp3"></use>
+            </svg>
+          </li>
+          <li class="equip-regular">
+            <svg width="106" height="53">
+              <use href="./images/icons.svg#icon-emp4"></use>
+            </svg>
+          </li>
+          <li class="equip-regular">
+            <svg width="106" height="53">
+              <use href="./images/icons.svg#icon-emp5"></use>
+            </svg>
+          </li>
+          <li class="equip-regular">
+            <svg width="106" height="53">
+              <use href="./images/icons.svg#icon-emp6"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer-section">
+      <section class="container order-footer">
+        <address>
+          <ul class="footer-list">
+            <li>
+              <a href="./index.html" class="footer-links link-studio-footer" target="_self">
+                WebStudio</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer-links" target="_self">Ciudad de Bogota</a>
+            </li>
+            <li>
+              <a href="#" class="footer-links" target="_self">qndresj@gmail.com</a>
+            </li>
+            <li>
+              <a href="#" class="footer-links" target="_self">+57 3114885100</a>
+            </li>
+          </ul>
+        </address>
+
+        <ul class="footer-list-contact">
+          <li>
+            <p class="footer-phara">encuentranos en</p>
+          </li>
+          <ul class="container-icons-footer icons-equip-footer">
+            <li>
+              <a href="#" class="icon-tam">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon-tam">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon-tam">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon-tam">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </ul>
+
+        <ul class="footer-list-infor">
+          <li>
+            <div>
+              <p class="footer-phara">SUSCRÍBASE AL BOLETÍN INFORMATIVO</p>
+            </div>
+          </li>
+          <li>
+            <div class="footer-email-div">
+              <input
+                class="text-footer-email"
+                type="text"
+                name="TxtEmailInfor"
+                id="user_email_inform"
+                placeholder="Correo electrónico"
+              />
+            </div>
+          </li>
+        </ul>
+        <div class="button-footer-div">
+          <button class="button-footer" type="submit">
+            <div class="text-button-send">
+              <p>Suscríbase</p>
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-enviar-cono"></use>
+              </svg>
+            </div>
+          </button>
+        </div>
+      </section>
+    </footer>
+
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

@@ -439,22 +439,24 @@ svg {
     align-items: center;
     margin-top: 4px;
     padding-left: 40px;
-}
-
-.input-relative:hover , .group-input:hover{
+    outline: none;
     transition: var(--efect-hover-color), var(--efect-border-color);
-    color: rgba(33, 150, 243, 1);
-    border-color: rgba(33, 150, 243, 1);
 }
 
 .icon-item{
     position: absolute;
+    transition: var(--efect-hover-color);
     left: 14px;
     top: 11px;
 }
 
-.group-input-comments:hover {
-    transition: var(--efect-hover-color), var(--efect-border-color);
+.group-input:hover, 
+.group-input:hover + .icon-item {
+    color: rgba(33, 150, 243, 1);
+    border-color: rgba(33, 150, 243, 1);
+}
+
+.group-input:focus, .group-input:focus + .icon-item {
     color: rgba(33, 150, 243, 1);
     border-color: rgba(33, 150, 243, 1);
 }
@@ -467,6 +469,18 @@ svg {
     border: 1px solid rgba(33, 33, 33, 0.20);
     margin-top: 4px;
     position: relative;
+    outline: none;
+    transition: var(--efect-hover-color), var(--efect-border-color);
+}
+
+.group-input-comments:hover, .text-area-model:hover{
+    color: rgba(33, 150, 243, 1);
+    border-color: rgba(33, 150, 243, 1);
+}
+
+.group-input-comments:focus , .text-area-model:focus{
+    color: rgba(33, 150, 243, 1);
+    border-color: rgba(33, 150, 243, 1);
 }
 
 .com-space{
@@ -487,7 +501,48 @@ svg {
     scroll-behavior: auto;
     border-color: white;
     resize: none;
+    outline: none;
     position: absolute;
+}
+
+.terms{
+    position: relative;
+    cursor: pointer;
+}
+
+.terms:hover .checkbox-unchecked{
+    fill: #2169F3;
+}
+
+.checkbox-checked{
+    width: 16px;
+    height: 15px;
+    position: relative;
+    background-color: #2196F3;
+    fill: white;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.checkbox-unchecked {
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    opacity: 0.5;
+    visibility: visible;
+    fill: #212121;
+}
+
+.checkbox:checked~.checkbox-unchecked{
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.checkbox:checked~.checkbox-checked {
+
+    opacity: 1;
+    visibility: visible;
 }
 
 .check-model{
